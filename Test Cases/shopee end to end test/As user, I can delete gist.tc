@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>As user, I can delete gist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>feba1d26-26c3-47f1-8bc8-14e6853cbc8d</testCaseGuid>
+</TestCaseEntity>
