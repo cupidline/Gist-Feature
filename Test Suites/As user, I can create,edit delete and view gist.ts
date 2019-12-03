@@ -14,24 +14,24 @@
       <guid>8aff02fe-2c9f-4f5c-88ff-10df232f6b53</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/shopee end to end test/As a user, I can create gist</testCaseId>
+      <testCaseId>Test Cases/end to end test/As a user, I can create gist</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>aa7c09ba-d644-4727-b2b4-2734154e9912</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/shopee end to end test/As a user, I can see all of my gist</testCaseId>
+      <testCaseId>Test Cases/end to end test/As a user, I can see all of my gist</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d234f9ae-568c-4006-92b4-5e6015f7b6c2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/shopee end to end test/As user, I can delete gist</testCaseId>
+      <testCaseId>Test Cases/end to end test/As user, I can delete gist</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>403fb319-4fc5-43a3-b07a-a398b364ca34</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/shopee end to end test/As user, I can edit gist</testCaseId>
+      <testCaseId>Test Cases/end to end test/As user, I can edit gist</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

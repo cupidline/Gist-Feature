@@ -15,14 +15,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//to create gist and can be called for edit and delete
-WebUI.callTestCase(findTestCase('shopee end to end test/Common/As a user, I can login'), [:], FailureHandling.STOP_ON_FAILURE)
+//using call test case to cut short the path
+WebUI.callTestCase(findTestCase('end to end test/As a user, I can create gist'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://gist.github.com/')
+WebUI.click(findTestObject('GistFeature/button_delete'))
 
-WebUI.click(findTestObject('GistFeature/link_go_to_gist_list'))
+//accept alert of javascript
+WebUI.acceptAlert()
 
-WebUI.verifyElementPresent(findTestObject('GistFeature/link_github_profile'), 0)
-
-WebUI.verifyElementPresent(findTestObject('GistFeature/link_backtogithub'), 0)
+WebUI.verifyTextPresent('Gist deleted successfully', false)
 

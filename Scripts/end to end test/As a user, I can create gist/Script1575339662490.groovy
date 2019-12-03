@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 //to create gist and can be called for edit and delete
-WebUI.callTestCase(findTestCase('shopee end to end test/Common/As a user, I can login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('end to end test/Common/As a user, I can login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.navigateToUrl('https://gist.github.com/')
 

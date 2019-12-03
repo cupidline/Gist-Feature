@@ -15,13 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//using call test case to cut short the path
-WebUI.callTestCase(findTestCase('shopee end to end test/As a user, I can create gist'), [:], FailureHandling.STOP_ON_FAILURE)
+//using create test case to create a short code and readable based on Page Oriented Modelling
+WebUI.callTestCase(findTestCase('end to end test/As a user, I can create gist'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('GistFeature/button_delete'))
+WebUI.click(findTestObject('GistFeature/button_edit'))
 
-//accept alert of javascript
-WebUI.acceptAlert()
+WebUI.setText(findTestObject('GistFeature/input_context'), 'New Context')
 
-WebUI.verifyTextPresent('Gist deleted successfully', false)
+WebUI.click(findTestObject('GistFeature/button_update'))
+
+//verify the new text is present
+WebUI.verifyTextPresent('New Context', false)
 
